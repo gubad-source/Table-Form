@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mt-5">
+          <form id="tableForm">
+            <div class="form-group">
+              <label for="column">Sütun</label>
+              <input
+                type="number"
+                name="column"
+                id="column"
+                required
+                min="1"
+                class="form-control"
+                value="3"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="row">Sətir</label>
+              <input
+                type="number"
+                name="row"
+                id="row"
+                required
+                min="1"
+                class="form-control"
+                value="4"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Yarat</button>
+          </form>
+        </div>
+
+        <div id="table-wrapper" class="col-lg-12 mt-3"></div>
+      </div>
+
+      <div class="input-group d-none" id="table-edit-input">
+        <input type="text" id="text" class="form-control" placeholder="Mətn" />
+        <div class="input-group-append" id="button-addon4">
+          <button id="complete" class="btn btn-outline-success" type="button">
+            <i class="fas fa-check"></i>
+          </button>
+          <button id="close" class="btn btn-outline-danger" type="button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
