@@ -1,0 +1,16 @@
+/* table-form */
+#table-edit-input {
+  width: 250px;
+  display: inline-flex;
+  position: fixed;
+}
+
+/* multiple-selection */
+.multiple select {
+  width: 100%;
+  height: 300px;
+}
+.col-xs-2 {
+  display: flex;
+  flex-direction: column;
+}
