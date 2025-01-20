@@ -14,3 +14,12 @@
   display: flex;
   flex-direction: column;
 }
+/* highlight */
+.highligth span {
+  cursor: pointer;
+}
+
+.highligth span.active,
+.highligth span:hover {
+  background-color: yellow;
+}
